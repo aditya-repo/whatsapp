@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true,
+        ".next": true,
+        "next-env.d.ts": true,
+        "package-lock.json": true,
+        "postcss.config.mjs": true,
+        "next.config.ts": true,
+        "eslint.config.js": true,
+        "eslint.config.mjs": true,
+        "README.md": true,
+        "tsconfig.json": true,
+        // "src/app/globals.css": true,
+        "src/app/favicon.ico": true
+    },
+}
