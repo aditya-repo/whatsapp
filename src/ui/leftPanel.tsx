@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import ChatBox from "./userDialog"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import { useEffect, useState } from "react"
-import axiosInstance from "@/lib/AxiosWrapper"
+import axiosInstance from "@/lib/axios"
 import URL from "@/lib/Urls"
 import NewFriend from "./NewFriend"
 

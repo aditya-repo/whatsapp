@@ -3,7 +3,7 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { INewUser } from "./leftPanel"
-import axiosInstance from "@/lib/AxiosWrapper"
+import axiosInstance from "@/lib/axios"
 import URL from "@/lib/Urls"
 
 
