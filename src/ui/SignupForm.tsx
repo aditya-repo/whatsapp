@@ -1,8 +1,6 @@
 "use client"
 
 import React, { useActionState, useState } from "react";
-import axios from "axios";
-import URL from "@/lib/Urls";
 import { signup } from "@/actions/auth";
 
 type SignupFormProps = {
@@ -17,22 +15,25 @@ const SignupForm: React.FC = () => {
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4 text-gray-800">New Here? Join Us</h2>
-        <form>
+        <form action={action}>
           <input
             type="text"
             placeholder="Full Name"
+            name="name"
             className="w-full p-2 border border-gray-300 rounded mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           {state?.errors?.name && <p>{state.errors.name}</p>}
           <input
             type="email"
             placeholder="Email Address"
+            name="email"
             className="w-full p-2 border border-gray-300 rounded mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           {state?.errors?.email && <p>{state.errors.email}</p>}
           <input
             type="password"
             placeholder="Password"
+            name="password"
             className="w-full p-2 border border-gray-300 rounded mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />      {state?.errors?.password && (
             <div>
